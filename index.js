@@ -1,7 +1,7 @@
 const { Server } = require('ws');
  
-const sockserver = new Server({ port: 8080 });
-console.log("started at port 8080")
+const sockserver = new Server({ port: 8081 });
+console.log("started at port 8081")
 sockserver.on('connection', (ws) => {
    console.log('New client connected!'); 
    ws.on('close', () => console.log('Client has disconnected!'));
